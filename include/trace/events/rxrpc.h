@@ -145,15 +145,16 @@
 	EM(rxrpc_skb_put_jumbo_subpacket,	"PUT jumbo-sub") \
 	EM(rxrpc_skb_put_last_nack,		"PUT last-nack") \
 	EM(rxrpc_skb_put_purge,			"PUT purge    ") \
+	EM(rxrpc_skb_put_response_copy,		"PUT resp-cpy ") \
 	EM(rxrpc_skb_put_rotate,		"PUT rotate   ") \
 	EM(rxrpc_skb_put_unknown,		"PUT unknown  ") \
 	EM(rxrpc_skb_see_conn_work,		"SEE conn-work") \
 	EM(rxrpc_skb_see_recvmsg,		"SEE recvmsg  ") \
 	EM(rxrpc_skb_see_reject,		"SEE reject   ") \
 	EM(rxrpc_skb_see_rotate,		"SEE rotate   ") \
+	EM(rxrpc_skb_see_unshare_nomem,		"SEE unshar-nm") \
 	E_(rxrpc_skb_see_version,		"SEE version  ")
 
-	EM(rxrpc_skb_put_response_copy,		"PUT resp-cpy ") \
 #define rxrpc_local_traces \
 	EM(rxrpc_local_free,			"FREE        ") \
 	EM(rxrpc_local_get_call,		"GET call    ") \
@@ -162,7 +163,6 @@
 	EM(rxrpc_local_get_peer,		"GET peer    ") \
 	EM(rxrpc_local_get_prealloc_conn,	"GET conn-pre") \
 	EM(rxrpc_local_new,			"NEW         ") \
-	EM(rxrpc_skb_see_unshare_nomem,		"SEE unshar-nm") \
 	EM(rxrpc_local_put_bind,		"PUT bind    ") \
 	EM(rxrpc_local_put_call,		"PUT call    ") \
 	EM(rxrpc_local_put_for_use,		"PUT for-use ") \
