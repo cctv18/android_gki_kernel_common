@@ -126,8 +126,6 @@
 	E_(rxrpc_call_poke_timer_now,		"Timer-now")
 
 #define rxrpc_skb_traces \
-	EM(rxrpc_skb_eaten_by_unshare,		"ETN unshare  ") \
-	EM(rxrpc_skb_eaten_by_unshare_nomem,	"ETN unshar-nm") \
 	EM(rxrpc_skb_get_conn_secured,		"GET conn-secd") \
 	EM(rxrpc_skb_get_conn_work,		"GET conn-work") \
 	EM(rxrpc_skb_get_last_nack,		"GET last-nack") \
@@ -154,6 +152,7 @@
 	EM(rxrpc_skb_see_rotate,		"SEE rotate   ") \
 	E_(rxrpc_skb_see_version,		"SEE version  ")
 
+	EM(rxrpc_skb_put_response_copy,		"PUT resp-cpy ") \
 #define rxrpc_local_traces \
 	EM(rxrpc_local_free,			"FREE        ") \
 	EM(rxrpc_local_get_call,		"GET call    ") \
@@ -162,6 +161,7 @@
 	EM(rxrpc_local_get_peer,		"GET peer    ") \
 	EM(rxrpc_local_get_prealloc_conn,	"GET conn-pre") \
 	EM(rxrpc_local_new,			"NEW         ") \
+	EM(rxrpc_skb_see_unshare_nomem,		"SEE unshar-nm") \
 	EM(rxrpc_local_put_bind,		"PUT bind    ") \
 	EM(rxrpc_local_put_call,		"PUT call    ") \
 	EM(rxrpc_local_put_for_use,		"PUT for-use ") \
